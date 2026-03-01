@@ -1,6 +1,8 @@
-// next.config.js
-module.exports = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   output: 'export',
-  basePath: '/portfolio',
-  assetPrefix: '/portfolio/',
+  images: { unoptimized: true },
+  basePath: '',
 };
+
+module.exports = nextConfig;
