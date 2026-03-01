@@ -12,7 +12,10 @@ const projectsData = [
     image: "/images/projects/1.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/Saikat-dot678/portfolio",
-    previewUrl: "/",
+    //previewUrl: "/",
+    video: "/videos/portfolio.mp4",
+    fullDescription:
+      "This project showcases my personal portfolio website built using Next.js 14, Tailwind CSS, Framer Motion animations, and deployed via GitHub Pages.",
   },
   {
     id: 2,
@@ -21,7 +24,10 @@ const projectsData = [
     image: "/images/projects/2.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/Saikat-dot678/sohojia-foundation",
-    previewUrl: "/",
+    //previewUrl: "/",
+     video: "/videos/sohojia.mp4",
+    fullDescription:
+      "A volunteer monitoring web system with secure user authentication, attendance, and tracking dashboards.",
   },
   {
     id: 3,
@@ -30,7 +36,10 @@ const projectsData = [
     image: "/images/projects/3.png",
     tag: ["All", "IoT"],
     gitUrl: "https://github.com/Saikat-dot678/LoRa-develop",
-    previewUrl: "/",
+    //previewUrl: "/",
+    video: "/videos/lora.mp4",
+    fullDescription:
+      "A decentralized LoRa-based mesh communication system using ESP32 and SX1262 Devices.",
   },
   {
     id: 4,
@@ -39,7 +48,10 @@ const projectsData = [
     image: "/images/projects/4.png",
     tag: ["All", "IoT"],
     gitUrl: "/",
-    previewUrl: "/",
+    //previewUrl: "/",
+    video: "/videos/attendance.mp4",
+    fullDescription:
+      "An offline-capable IoT Smart Attendance Device using fingerprint authentication to ensure secure, tamper-proof student verification in environments with poor or no internet connectivity. Records are stored locally and synced later, ensuring accuracy and reliability in all conditions.",
   },
   // {
   //   id: 5,
@@ -116,7 +128,8 @@ const ProjectsSection = () => {
               description={project.description}
               imgUrl={project.image}
               gitUrl={project.gitUrl}
-              previewUrl={project.previewUrl}
+              video={project.video}
+              fullDescription={project.fullDescription}
             />
           </motion.li>
         ))}
