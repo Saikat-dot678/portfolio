@@ -15,8 +15,8 @@ const TAB_DATA = [
         <li>MySQL</li>
         <li>JavaScript</li>
         <li>React.js</li>
-        <li>Computer Networking</li>
-        <li>Cyber Security</li>
+        <li>Computer Networks</li>
+        <li>IoT</li>
       </ul>
     ),
   },
